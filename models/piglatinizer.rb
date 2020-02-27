@@ -1,10 +1,11 @@
 class PigLatinizer
-  attr_accessor :text
+  attr_accessor :text, :words
 
   @@vowels =['a', 'e', 'i', 'o', 'u']
 
   def initialize(text)
     self.text = text
+    self.words = self.break_into_words
   end
 
   def break_into_words
