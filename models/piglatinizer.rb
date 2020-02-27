@@ -5,8 +5,8 @@ class PigLatinizer
     self.text = text
   end
 
-  def show
-    self.text[0]
+  def break_into_words
+    self.text.split(' ')
   end
 
 end
