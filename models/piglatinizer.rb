@@ -13,7 +13,7 @@ class PigLatinizer
   end
 
   def consonants_from_front(word)
-    if !word.empty? && word != nil && !@@vowels.include?(word[0])
+    if  word != nil && !word.empty? && !@@vowels.include?(word[0])
       word[1] ? rest_of_word = word[1..-1] : rest_of_word = ''
       word[0] + consonants_from_front(rest_of_word)
     else
