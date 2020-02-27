@@ -24,6 +24,6 @@ class PigLatinizer
   def drop_front(word, num_to_drop)
     word[(num_to_drop-1)..-1]
   end
-    
+
 
 end
