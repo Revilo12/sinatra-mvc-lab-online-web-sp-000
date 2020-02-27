@@ -12,6 +12,6 @@ class PigLatinizer
   end
 
   def consonants_from_front(word)
-    if 
+    if
 
 end
