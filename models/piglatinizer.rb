@@ -51,5 +51,9 @@ class PigLatinizer
     @words.collect {|word| self.piglatinize_word(word)}.join(' ')
   end
 
+  def piglatinizeize
+    self.piglatinize(self.text)
+  end
+
 
 end
