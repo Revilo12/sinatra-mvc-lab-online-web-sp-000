@@ -25,5 +25,22 @@ class PigLatinizer
     word[(num_to_drop-1)..-1]
   end
 
+  def compute_back(front)
+    if front
+      front + 'ay'
+    else
+      'way'
+    end
+  end
+
+  def add_to_back (word, string)
+    word + string
+  end
+
+  def pig_latin_single(word)
+    front = self.consonants_from_front(word)
+    sans_front = self.drop_front(word, front.length)
+    
+
 
 end
