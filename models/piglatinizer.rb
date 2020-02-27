@@ -1,7 +1,7 @@
 class PigLatinizer
   attr_accessor :text, :words
 
-  @@vowels =['a', 'e', 'i', 'o', 'u']
+  @@vowels =['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 
   def set_up(text)
     self.text = text
