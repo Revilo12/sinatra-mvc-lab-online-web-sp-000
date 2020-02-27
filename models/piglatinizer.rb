@@ -18,4 +18,8 @@ class PigLatinizer
     end
   end
 
+  def consonants_from_front_test
+    self.consonants_from_front(@words[0])
+  end
+
 end
