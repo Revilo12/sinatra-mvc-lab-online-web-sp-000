@@ -12,6 +12,8 @@ class PigLatinizer
   end
 
   def consonants_from_front(word)
-    if
+    if !@@vowels.include(word[0])
+      word[0] + consonants_from_front(word.drop(1))
+      
 
 end
