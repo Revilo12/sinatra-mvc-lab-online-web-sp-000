@@ -48,7 +48,7 @@ class PigLatinizer
   def piglatinize(text)
     self.text = text
     self.words = self.break_into_words(self.text)
-    @words.collect {|word| self.pig_latin_single(word)}.join(' ')
+    @words.collect {|word| self.piglatinize_word(word)}.join(' ')
   end
 
 
