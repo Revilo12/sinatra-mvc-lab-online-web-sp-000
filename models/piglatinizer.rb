@@ -21,8 +21,9 @@ class PigLatinizer
     end
   end
 
-  def consonants_from_front_test
-    self.consonants_from_front(@words[0])
+  def drop_front(word, num_to_drop)
+    word[(num_to_drop-1)..-1]
   end
+    
 
 end
