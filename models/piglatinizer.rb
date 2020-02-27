@@ -5,4 +5,8 @@ class PigLatinizer
     self.text = text
   end
 
+  def show 
+    self.text 
+  end
+
 end
