@@ -3,7 +3,7 @@ class PigLatinizer
 
   @@vowels =['a', 'e', 'i', 'o', 'u']
 
-  def initialize(text)
+  def set_up(text)
     self.text = text
     self.words = self.break_into_words
   end
