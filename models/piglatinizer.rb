@@ -40,7 +40,7 @@ class PigLatinizer
   def pig_latin_single(word)
     front = self.consonants_from_front(word)
     sans_front = self.drop_front(word, front.length)
-    
+
 
 
 end
