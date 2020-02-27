@@ -38,9 +38,11 @@ class PigLatinizer
   end
 
   def pig_latin_single(word)
-    front = self.consonants_from_front(word)
-    sans_front = self.drop_front(word, front.length)
-    self.add_to_back(sans_front, compute_back(front))
+    if word
+      front = self.consonants_from_front(word)
+      sans_front = self.drop_front(word, front.length)
+      self.add_to_back(sans_front, compute_back(front))
+    end
   end
 
   def test_pig_1
