@@ -47,9 +47,6 @@ class PigLatinizer
 
   def pig_latin_all
     @words.collect {self.pig_latin_single(word)}.join(' ')
-
-  def test_pig_1
-    self.pig_latin_single(words[0])
   end
 
 
