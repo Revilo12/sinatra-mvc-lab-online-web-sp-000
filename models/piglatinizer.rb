@@ -26,7 +26,7 @@ class PigLatinizer
   end
 
   def compute_back(front)
-    if front
+    if front != '' && front != nil
       front + 'ay'
     else
       'way'
