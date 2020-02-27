@@ -37,7 +37,7 @@ class PigLatinizer
     word + string
   end
 
-  def piglatinize(word)
+  def piglatinize_word(word)
     if word
       front = self.consonants_from_front(word)
       sans_front = self.drop_front(word, front.length)
@@ -45,7 +45,9 @@ class PigLatinizer
     end
   end
 
-  def pig_latin_all
+  def piglatinize(text)
+    self.text = text
+    self.words = self.break_into_words(self.text)
     @words.collect {|word| self.pig_latin_single(word)}.join(' ')
   end
 
