@@ -6,7 +6,7 @@ class PigLatinizer
   end
 
   def show
-    self.text
+    self.first.text
   end
 
 end
