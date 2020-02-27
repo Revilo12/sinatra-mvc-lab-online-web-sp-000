@@ -22,7 +22,7 @@ class PigLatinizer
   end
 
   def drop_front(word, num_to_drop)
-    word[(num_to_drop-2)..-1]
+    word[num_to_drop..-1]
   end
 
   def compute_back(front)
